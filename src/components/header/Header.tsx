@@ -20,7 +20,7 @@ const Header = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
-    <header className="backdrop-blur-md bg-transparent/90 fixed z-1000 left-0 right-0 top-0 border-b-1 border-gray-300">
+    <header className="backdrop-blur-md bg-transparent/90 fixed z-1000 left-0 right-0 top-0 border-b-1 border-gray-300 dark:border-gray-700">
       <MaxWidthWrapper>
         <div className="flex justify-between items-center py-4">
           <Link

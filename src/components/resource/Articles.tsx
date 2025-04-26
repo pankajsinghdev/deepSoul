@@ -10,7 +10,7 @@ interface Props {
 }
 
 const Article: FC<Props> = ({ article }) => (
-  <article className="bg-background rounded-2xl">
+  <article className="bg-background rounded-2xl shadow-2xl transition-transform duration-300 hover:scale-105 ease-in-out">
     <Image
       width={36}
       quality={100}

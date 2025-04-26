@@ -11,7 +11,9 @@ const Footer: FC = () => {
   ];
   return (
     <footer className="flex flex-col md:flex-row md:justify-between items-center gap-3 text-gray-500 m-6">
-      <small> &copy; 2025 DeepSoul. All Rights reserved.</small>
+      <small className="text-base">
+        &copy; 2025 DeepSoul. All Rights reserved.
+      </small>
       <nav className="flex flex-col sm:flex-row gap-4 items-center">
         <ul className="flex flex-col sm:flex-row gap-4 items-center ">
           {footers.map((obj) => (

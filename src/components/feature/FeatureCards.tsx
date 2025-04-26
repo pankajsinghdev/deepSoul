@@ -16,7 +16,7 @@ const FeatureCards: FC<Props> = ({ feature }) => {
   return (
     <article
       aria-labelledby={headingId}
-      className="w-full bg-background rounded-lg p-4 shadow-2xl border border-gray-200"
+      className="w-full bg-background fly-in rounded-lg p-4 shadow-2xl border border-gray-200"
     >
       <div className="mb-4 w-fit  bg-gradient-to-br from-pink-200 to-white light text-cyan-400 p-2 rounded-xl dark:bg-light-background dark:bg-none">
         {feature.icon}
