@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import Footer from "@/components/footer/Footer";
+import Header from "@/components/header/Header";
+import ThemeProvider from "@/utiils/ThemeProvoder";
 
 export const metadata: Metadata = {
   title: "DeepSoul - Your Inner Wellbeing Hub",
@@ -15,13 +16,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={`antialiased`}>
-        <>
-          <Header />
-          {children}
-          <Footer />
-        </>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <header>
+            <Header />
+          </header>
+          <main>{children}</main>
+          <footer>
+            <Footer />
+          </footer>
+        </ThemeProvider>
       </body>
     </html>
   );

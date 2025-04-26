@@ -1,5 +1,6 @@
-import FeatureCards from "@/components/FeatureCards";
-import { Book, Calendar, Heart, MessageCircleCode, User2 } from "lucide-react";
+import FeatureCards from "@/components/feature/FeatureCards";
+import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import { Book, Calendar, Heart, MessageCircle, User2 } from "lucide-react";
 import { FC } from "react";
 
 const features = [
@@ -22,7 +23,7 @@ const features = [
       "Your assigned therapist keeps track of your progress, provides personalized exercises, and is available when you need guidance.",
   },
   {
-    icon: <MessageCircleCode size={40} />,
+    icon: <MessageCircle size={40} />,
     title: "Supportive Community",
     description:
       "Connect with others who understand what you're going through. Share experiences, offer support, and never feel alone in your journey.",
@@ -35,14 +36,14 @@ const features = [
   },
 ];
 
-const Features: FC = () => {
-  return (
-    <div>
-      <div className="flex flex-col items-center gap-4 my-8">
-        <h1 className="text-4xl font-semibold">
+const Features: FC = () => (
+  <MaxWidthWrapper>
+    <section className="p-2">
+      <div className="flex flex-col items-center gap-4 my-8 p-2">
+        <h2 className="text-4xl font-semibold text-center">
           Your Complete Mental Wellness Solution
-        </h1>
-        <p className="text-lg text-gray-400 text-center">
+        </h2>
+        <p className="text-xl text-gray-400 text-center">
           DeepSoul combines multiple approaches to provide comprehensive support
           for your mental wellbeing journey.
         </p>
@@ -56,7 +57,8 @@ const Features: FC = () => {
           );
         })}
       </div>
-    </div>
-  );
-};
+    </section>
+  </MaxWidthWrapper>
+);
+
 export default Features;

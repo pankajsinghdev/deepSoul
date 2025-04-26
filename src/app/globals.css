@@ -1,10 +1,20 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
 :root {
   --background: #ffffff;
   --foreground: #0c0f23;
   --light-background: #1c2238;
   --card: #030518;
+  --dark-purple: #300270;
+}
+
+.dark {
+  --background: #0c0f23;
+  --foreground: #ffffff;
+  --light-background: #1c2238;
+  --card: #030518;
+  --dark-purple: #300270;
 }
 
 @theme inline {
@@ -12,6 +22,7 @@
   --color-foreground: var(--foreground);
   --color-light-background: var(--light-background);
   --color-card: var(--card);
+  --color-dark-purple: var(--dark-purple);
 }
 
 @keyframes float {
@@ -26,16 +37,9 @@
   }
 }
 
-.animate-float {
-  animation: float 5s ease-in-out infinite;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0c0f23;
-    --foreground: #ededed;
-    --light-background: #1c2238;
-    --card: #030518;
+@media (min-width: 768px) {
+  .animate-float {
+    animation: float 5s ease-in-out infinite;
   }
 }
 
