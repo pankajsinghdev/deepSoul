@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Logo from "../Logo";
-import { Menu, Sun, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { scrollToSection } from "@/utiils/helpers";
 import MaxWidthWrapper from "../MaxWidthWrapper";
 import HeaderLink from "./HeaderLink";

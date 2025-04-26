@@ -1,5 +1,4 @@
 import Button, { ButtonType } from "@/components/Button";
-import GradientCard from "@/components/GradientCard";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import Article from "@/components/resource/Articles";
 import ResourceCard from "@/components/resource/ResourceCard";

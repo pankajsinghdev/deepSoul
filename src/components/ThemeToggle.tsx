@@ -10,7 +10,6 @@ interface Props {
 
 const ThemeToggle: FC<Props> = ({ onClick }) => {
   const { theme, setTheme } = useTheme();
-  const nextTheme = theme === "dark" ? "light" : "dark";
 
   return (
     <button

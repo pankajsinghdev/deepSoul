@@ -6,9 +6,7 @@ import TherapyPoint from "@/components/therapy/TherapyPoint";
 import { Calendar, Camera, Clock10, Phone } from "lucide-react";
 import { FC } from "react";
 
-interface Props {}
-
-const Therapy: FC<Props> = (props) => {
+const Therapy: FC = () => {
   const therapyPoints = [
     {
       icon: <Calendar />,
