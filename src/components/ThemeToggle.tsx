@@ -19,7 +19,7 @@ const ThemeToggle: FC<Props> = ({ onClick }) => {
       aria-label={`Toggle theme`}
       onClick={() => {
         setTheme(theme === "dark" ? "light" : "dark");
-        onClick ? onClick() : null;
+        if (onClick) onClick();
       }}
     >
       <span className="sr-only">{`Toggle theme`}</span>

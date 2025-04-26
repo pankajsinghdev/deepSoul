@@ -13,6 +13,9 @@ const Therapist: FC<Props> = ({ therapist }) => (
   <article className="flex items-center gap-2">
     <div className="min-w-16 min-h-16">
       <Image
+        width={64}
+        height={64}
+        quality={100}
         alt="therapist profile picture"
         src={therapist.pic}
         className=" h-16 w-16 rounded-full"

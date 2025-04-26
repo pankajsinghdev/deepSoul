@@ -17,7 +17,7 @@ const HeaderLink: FC<Props> = ({ header, onclick }) => (
     href={`#${header.link}`}
     onClick={(e) => {
       scrollToSection(e, header.link);
-      onclick && onclick();
+      if (onclick) onclick();
     }}
     className="border-b md:border-none text-gray-400"
   >

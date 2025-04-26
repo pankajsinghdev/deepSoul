@@ -12,6 +12,9 @@ interface Props {
 const Article: FC<Props> = ({ article }) => (
   <article className="bg-background rounded-2xl">
     <Image
+      width={36}
+      quality={100}
+      height={192}
       src={article.pic}
       className="w-full h-48 object-cover rounded-t-2xl"
       alt={article.title}
